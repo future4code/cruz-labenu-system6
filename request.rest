@@ -1,0 +1,14 @@
+GET http://localhost:3003/
+
+###
+
+GET http://localhost:3003/students/all
+
+### 
+
+POST http://localhost:3003/student/001
+Content-Type: application/json
+
+{
+    "class_id": 001
+}
