@@ -33,9 +33,29 @@ Content-Type: application/json
 
 ###
 
+POST http://localhost:3003/createClass
+Content-Type: application/json
+
+{
+    "name": "Dumont", 
+    "initialDate": "2021-01-01", 
+    "finalDate": "2021000000-05-17", 
+    "classModule": "6"
+}
+
+###
+
 POST http://localhost:3003/students-class/4
 Content-Type: application/json
 
 {
     "class_id": 500
+}
+
+###
+POST http://localhost:3003/teacher/1
+Content-Type: application/json
+
+{
+    "classId": "10000" 
 }
