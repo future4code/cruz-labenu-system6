@@ -1,14 +1,8 @@
-import { Request, Response } from "express";
-
 import app from "./app";
-import connection from "./connection";
+import { createStudent } from "./endpoints/createStudent";
+import { getStudents } from "./endpoints/getStudents";
 
-app.get("/students/all", async (req: Request, res: Response) => {
-  try {
-    const result = await connection("student").select();
 
-    res.status(200).send(result);
-  } catch (error) {
-    res.status(400).send(error.message);
-  }
-});
+app.get("/students/all", getStudents);
+
+app.post('/student', createStudent)

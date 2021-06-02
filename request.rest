@@ -12,3 +12,14 @@ Content-Type: application/json
 {
     "class_id": 001
 }
+
+###
+
+POST http://localhost:3003/student
+Content-Type: application/json
+
+{
+    "name": "Marcelino Sandroni",
+    "email": "marcelino@hotmail.com",
+    "birthDate": "1991-08-20"
+}
