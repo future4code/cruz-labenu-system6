@@ -35,3 +35,12 @@ Content-Type: application/json
     "finalDate": "2021000000-05-17", 
     "classModule": "6"
 }
+
+###
+
+POST http://localhost:3003/teacher/1
+Content-Type: application/json
+
+{
+    "classId": "10000" 
+}
