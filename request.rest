@@ -19,7 +19,28 @@ POST http://localhost:3003/student
 Content-Type: application/json
 
 {
-    "name": "Marcelino Sandroni",
-    "email": "marcelino@hotmail.com",
-    "birthDate": "1991-08-20"
+    "name": "Joana",
+    "email": "joaninha@hotmail.com",
+    "birthDate": "10/10/1990"
+}
+
+###
+
+POST http://localhost:3003/createClass
+Content-Type: application/json
+
+{
+    "name": "Dumont", 
+    "initialDate": "2021-01-01", 
+    "finalDate": "2021000000-05-17", 
+    "classModule": "6"
+}
+
+###
+
+POST http://localhost:3003/teacher/1
+Content-Type: application/json
+
+{
+    "classId": "10000" 
 }
