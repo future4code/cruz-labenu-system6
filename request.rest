@@ -30,8 +30,8 @@ POST http://localhost:3003/createClass
 Content-Type: application/json
 
 {
-    "name": "Tung", 
+    "name": "Dumont", 
     "initialDate": "2021-01-01", 
-    "finalDate": "2021-05-17", 
-    "module": "6"
+    "finalDate": "2021000000-05-17", 
+    "classModule": "6"
 }
