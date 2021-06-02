@@ -1,6 +1,3 @@
-GET http://localhost:3003/
-
-###
 
 GET http://localhost:3003/students/all
 
@@ -22,4 +19,14 @@ Content-Type: application/json
     "name": "Marcelino Sandroni",
     "email": "marcelino@hotmail.com",
     "birthDate": "1991-08-20"
+}
+
+###
+POST http://localhost:3003/teacher
+Content-Type: application/json
+
+{
+    "name": "Yuzo",
+    "email": "yuzo@gmail.com",
+    "birthDate": "1990/05/31"
 }
