@@ -26,7 +26,16 @@ POST http://localhost:3003/teacher
 Content-Type: application/json
 
 {
-    "name": "Yuzo",
-    "email": "yuzo@gmail.com",
-    "birthDate": "1990/05/31"
+    "name": "Amandinha",
+    "email": "Amandinha@gmail.com",
+    "birthDate": "1994/07/17"
+}
+
+###
+
+POST http://localhost:3003/students-class/4
+Content-Type: application/json
+
+{
+    "class_id": 500
 }
