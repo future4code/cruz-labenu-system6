@@ -31,7 +31,7 @@
       + Email
       + BirthDate
 
-- **Criar docente
+- **Criar docente**
   * File name: createTeacher.ts
   * Method: POST
   * Path: /teacher
@@ -40,7 +40,7 @@
       + Email
       + BirthDate
   
-- **Criar Turma
+- **Criar Turma**
   * File name: createClass.ts
   * Method: POST
   * Path: /createClass
@@ -50,21 +50,21 @@
       + finalDate
       + classModule
   
-- **Adicionar estudante a turma
+- **Adicionar estudante a turma**
   * File name: addStudentToClass.ts
   * Method: POST
   * Path: /students-class/:id
   * Body:
       + class_id
   
-- **Adiconar Docente a turma
+- **Adiconar Docente a turma**
   * File name: addTeacherToClass.ts
   * Method: POST
   * Path: /teacher/:teacherId
   * Body:
     + classId
   
-- **Pegar a idade de algum estudante a partir do id
+- **Pegar a idade de algum estudante a partir do id**
   * File name: getStudentAge.ts
   * Method: GET
   * Path: /student/age/:id
@@ -73,13 +73,13 @@
       + dfs
       + ds
   
-- **Exibir estudantes de uma turma
+- **Exibir estudantes de uma turma**
   * File name: getStudentsByClass.ts
   * Method: GET
   * Path: /students-class
   * Body: ------
   
-- **Exibir docentes de uma turma
+- **Exibir docentes de uma turma**
   * File name: getTeachersByClass.ts
   * Method: GET
   * Path: /teachers-class
@@ -91,25 +91,25 @@
   * Path: /students-hobby
   * Body: ------
   
-- **Remover estudante de uma turma
+- **Remover estudante de uma turma**
   * File name: deleteStudentFromClass.ts
   * Method: POST
   * Path: /student/:id/remove-from-class
   * Body: ------
   
-- **Remover estudante
+- **Remover estudante**
   * File name: deleteStudent.ts
   * Method: DELETE
   * Path: /student/:id
   * Body: ------
   
-- **Remover docente de uma turma
+- **Remover docente de uma turma**
   * File name: deleteTeacherFromClass.ts
   * Method: POST
   * Path: /teacher/:id/remove-from-class
   * Body: ------
   
-- **Mudar turma de módulo
+- **Mudar turma de módulo**
   * File name: changeClassModule.ts
   * Method: POST
   * Path: /class/:id/change-module
