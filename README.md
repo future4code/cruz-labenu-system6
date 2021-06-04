@@ -68,11 +68,7 @@
   * File name: getStudentAge.ts
   * Method: GET
   * Path: /student/age/:id
-  * Body:
-      + Name
-      + dfs
-      + ds
-  
+  * Body: ------
 - **Exibir estudantes de uma turma**
   * File name: getStudentsByClass.ts
   * Method: GET
