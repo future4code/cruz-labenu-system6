@@ -33,7 +33,7 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:3003/createClass
+POST http://localhost:3003/class
 Content-Type: application/json
 
 {
@@ -45,11 +45,11 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:3003/students-class/4
+POST http://localhost:3003/students-class/1
 Content-Type: application/json
 
 {
-    "class_id": 500
+    "class_id": 1
 }
 
 ###
@@ -57,5 +57,38 @@ POST http://localhost:3003/teacher/1
 Content-Type: application/json
 
 {
-    "classId": "10000" 
+    "classId": "1" 
+}
+
+###
+
+GET http://localhost:3003/student/age/1
+
+###
+
+GET http://localhost:3003/students-class?class=cruz
+
+###
+
+GET http://localhost:3003/teachers-class?class=cruz
+###
+
+GET http://localhost:3003/students-hobby?hobby=futebol
+
+###
+DELETE  http://localhost:3003/student/10
+
+###
+POST http://localhost:3003/student/1/remove-from-class
+
+###
+POST http://localhost:3003/teacher/1/remove-from-class
+
+
+###
+POST http://localhost:3003/class/110/change-module
+Content-Type: application/json
+
+{
+    "classModule": "50" 
 }

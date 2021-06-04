@@ -17,7 +17,7 @@ export const addStudentToClass = async (
             throw new Error("No changes were made. Either student does not exists or there is not a change to already assigned class")
         }     
 
-        res.status(200).send("Student add to class")
+        res.status(200).send("Student added to class.")
 
         
 
