@@ -22,7 +22,7 @@
 
 ### Endpoints
 
-- **Criar estudante
+- **Criar estudante**
   * File name: createStudent.ts
   * Method: POST
   * Path: /student
