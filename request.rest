@@ -1,0 +1,94 @@
+
+GET http://localhost:3003/students/all
+
+### 
+
+POST http://localhost:3003/student/001
+Content-Type: application/json
+
+{
+    "class_id": 001
+}
+
+###
+
+POST http://localhost:3003/student
+Content-Type: application/json
+
+{
+    "name": "Marcelino Sandroni",
+    "email": "marcelino@hotmail.com",
+    "birthDate": "1991-08-20"
+}
+
+###
+POST http://localhost:3003/teacher
+Content-Type: application/json
+
+{
+    "name": "Amandinha",
+    "email": "Amandinha@gmail.com",
+    "birthDate": "1994/07/17"
+}
+
+###
+
+POST http://localhost:3003/class
+Content-Type: application/json
+
+{
+    "name": "Dumont", 
+    "initialDate": "2021-01-01", 
+    "finalDate": "2021000000-05-17", 
+    "classModule": "6"
+}
+
+###
+
+POST http://localhost:3003/students-class/1
+Content-Type: application/json
+
+{
+    "class_id": 1
+}
+
+###
+POST http://localhost:3003/teacher/1
+Content-Type: application/json
+
+{
+    "classId": "1" 
+}
+
+###
+
+GET http://localhost:3003/student/age/1
+
+###
+
+GET http://localhost:3003/students-class?class=cruz
+
+###
+
+GET http://localhost:3003/teachers-class?class=cruz
+###
+
+GET http://localhost:3003/students-hobby?hobby=futebol
+
+###
+DELETE  http://localhost:3003/student/10
+
+###
+POST http://localhost:3003/student/1/remove-from-class
+
+###
+POST http://localhost:3003/teacher/1/remove-from-class
+
+
+###
+POST http://localhost:3003/class/110/change-module
+Content-Type: application/json
+
+{
+    "classModule": "50" 
+}
